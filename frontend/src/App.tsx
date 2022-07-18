@@ -1,14 +1,19 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import NotificationButton from "./componentes/NotificationButton";
 import Header from "./componentes/Header";
 import SalesCard from "./componentes/SalesCard";
+
+
 function App() {
   return (
     <>
+      <ToastContainer />
       <Header />
       <main>
         <section id="sales">
           <div className="dsmeta-container">
-        <SalesCard />
+            <SalesCard />
           </div>
         </section>
       </main>
